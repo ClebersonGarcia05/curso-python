@@ -13,10 +13,10 @@ from time import sleep
 soma = 0
 esc = 0
 prod = 1
-#Enquanto a esc for diverente de 5 o programa não sai do loop
+#Enquanto a esc for diferente de 5 o programa não sai do loop
+num1 = float(input('Digite um valor: '))
+num2 = float(input('Digite um valor: '))
 while esc != 5:
-    num1 = float(input('Digite um valor: '))
-    num2 = float(input('Digite um valor: '))
     print("""
     [1] somar
     [2] multiplicar
@@ -26,7 +26,7 @@ while esc != 5:
     esc = int(input('Digite a opção desejada: '))
     if esc == 1:
         soma = num1 + num2
-        print(f'O valor da soma é: {soma}')
+        print(f'O valor da soma entre {num1} e {num2} é: {soma}')
     elif esc == 2:
         prod = num1 * num2
         print(f'O produto dos valores {num1} e {num2} é: {prod}')
@@ -36,7 +36,8 @@ while esc != 5:
         else:
             print(f'O número {num2} é maior que o número {num1}')
     elif esc == 4:
-        esc = 0
+        num1 = float(input('Digite um valor: '))
+        num2 = float(input('Digite um valor: '))
     elif esc > 5 or esc < 1:
         print('Opção inválida, tente novamente')
         esc = 0
@@ -46,3 +47,4 @@ while esc != 5:
         print('Aguarde...')
         sleep(2)
         print('Programa finalizado com sucesso!')
+    sleep(1)
