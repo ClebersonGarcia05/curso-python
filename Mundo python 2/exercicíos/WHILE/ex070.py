@@ -7,29 +7,23 @@ B) Quantos produtos custam mais de R$1000,00
 
 C) Qual é o nome do produto mais barato """
 
-cont = 0
-total = 0
-mp = 0
+cont = total = mp = andador = 0
 n = ''
-andador = 0
 while True:
     nome = str(input('Digite o nome do produto: ')).strip().lower()
     preco = float(input('Digite o preço do produto: R$'))
     total += preco
     andador += 1
-    if andador == 1:
+    if andador == 1 or preco < mp:
         mp = preco
         n = nome
     if preco > 1000:
          cont += 1
-    elif preco <= mp:
-        n = nome
-        mp = preco
     continuar = str(input('Deseja continuar? [S/N]: ')).strip().upper()
-    while continuar != 'S' and continuar != 'N':
+    while continuar not in 'SN':
         continuar = str(input('Deseja continuar? [S/N]: ')).strip().upper()
     if continuar == 'N':
         break
 print(f'O total gasto na compra é de: R${total}.')
 print(f'{cont} produto(s) custam mais de R$1000,00.')
-print(f'O produto mais barato é: {n} custando {mp}')
+print(f'O produto mais barato foi {n} que custa R${mp}')
