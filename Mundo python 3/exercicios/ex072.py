@@ -2,7 +2,7 @@
 deverá ler um número pelo teclado entre 0 e 20 e mostrá-lo por extenso. """
 
 extensos = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 
-'treze', 'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
+            'treze', 'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
 
 while True:
     num = int(input('Digite um número entre 0 e 20: '))

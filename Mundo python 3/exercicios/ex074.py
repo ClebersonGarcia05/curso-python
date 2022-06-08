@@ -2,6 +2,7 @@
 números gerados e também indique o menor e o maior valor que estão na tupla. """
 
 from random import randint
+
 me = ma = 0
 num = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10))
 for i in range (0, len(num)):
