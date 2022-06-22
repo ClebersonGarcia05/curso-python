@@ -9,7 +9,8 @@ lista = []
 for i in range(jogos):
     for j in range(6):
         num = randint(1, 60)
-        lista.append(num)
+        if num not in lista:
+            lista.append(num)
     lista.sort()
     print(f'{i+1}º sorteio : {lista}')
     lista.clear()
