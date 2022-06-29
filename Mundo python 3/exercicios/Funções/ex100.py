@@ -14,8 +14,9 @@ def sorteia(lista):
     print(f'Os números sorteado foram: {lista}')
     somaPar(lista)
 
+#Programa Principal
+num = []
 while True:
-    num = [5, 9, 7, 8, 6, 10, 1, 3, 2, 4]
     n = int(input('Adicione números [0 para parar]: '))
     if n == 0:
         break
