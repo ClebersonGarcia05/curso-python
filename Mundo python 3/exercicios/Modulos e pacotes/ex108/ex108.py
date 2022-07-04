@@ -1,7 +1,7 @@
 """ Adapte o código do desafio 107, criando uma função adcional chamada, moeda(), que consiga mostrar os valores como um 
 valor monetário formatado. """
 
-from utilidadesCev.moeda import moeda
+import moeda
 
 num = float(input('Digite um valor: '))
 porc = int(input('Digite qual a porcentagem: '))

@@ -1,7 +1,7 @@
 """ Crie um módulo chamado moeda.py que tenhas as funções incorporadas aumentar(), diminuir(), dobro() e metade().
 Faça também um programa que importe esse módulo e use algumas dessas funções.  """
 
-from utilidadesCev.moeda import moeda
+import moeda
 
 num = float(input('Digite um valor: '))
 porc = int(input('Digite qual a porcentagem: '))
